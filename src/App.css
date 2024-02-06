@@ -30,7 +30,7 @@ body {
   margin-right: 15px;
 }
 
-.work-experience {
+.work-experience, .education {
   background-color: #fff;
   margin: 20px auto;
   padding: 20px;
@@ -38,13 +38,13 @@ body {
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.work-experience h2 {
+.work-experience h2, .education h2 {
   border-bottom: 2px solid #007bff;
   color: #333;
   padding-bottom: 5px;
 }
 
-.work-experience h3 {
+.work-experience h3, .education h3 {
   color: #007bff;
   margin-top: 0;
 }
@@ -53,13 +53,17 @@ body {
   color: #666;
 }
 
-.work-experience ul {
+.education p, .education li {
+  color: #666;
+}
+
+.work-experience ul, .education ul {
   padding-left: 20px;
 }
 
 /* Include media queries for responsiveness */
 @media (max-width: 768px) {
-  .header, .work-experience {
+  .header, .work-experience, .education {
     width: 95%;
     margin: 20px auto;
   }
